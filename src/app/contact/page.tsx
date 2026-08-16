@@ -224,10 +224,6 @@ export default function ContactGrievancesPage() {
             </form>
           )}
         </div>
-
-
-        </div>
-      </div>
     </div>
   );
 }
