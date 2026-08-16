@@ -74,10 +74,8 @@ export default function ContactGrievancesPage() {
         </p>
       </div>
 
-      {/* Grid: Form vs Emergency Helpdesk Card */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-        {/* Support & Grievance Form (7 cols) */}
-        <div className="lg:col-span-7 space-y-6">
+      {/* Centered Form */}
+      <div className="max-w-2xl mx-auto space-y-6">
           {isSubmitted ? (
             <div className="p-8 sm:p-12 rounded-3xl bg-slate-50 border border-cyan-500/40 text-center space-y-4 shadow-2xl">
               <div className="w-16 h-16 rounded-2xl bg-emerald-500/20 border border-emerald-400 mx-auto flex items-center justify-center text-emerald-400">
@@ -227,72 +225,7 @@ export default function ContactGrievancesPage() {
           )}
         </div>
 
-        {/* Emergency SOS Helpdesk Card (5 cols) */}
-        <div className="lg:col-span-5 space-y-6">
-          <div className="p-8 rounded-3xl bg-gradient-to-b from-rose-950/70 via-slate-900 to-slate-950 border-2 border-rose-500/50 shadow-[0_0_40px_rgba(244,63,94,0.25)] space-y-6">
-            <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-2xl bg-rose-500/20 border border-rose-400 flex items-center justify-center text-rose-400">
-                <AlertTriangle className="w-6 h-6" />
-              </div>
-              <div>
-                <span className="text-[10px] font-bold uppercase tracking-widest text-rose-400">
-                  Priority Action
-                </span>
-                <h3 className="text-xl font-bold font-heading text-slate-900">
-                  Campus Emergency SOS
-                </h3>
-              </div>
-            </div>
 
-            <p className="text-xs text-rose-200/90 leading-relaxed">
-              If you or a peer are facing immediate medical emergencies, safety issues, or ragging harassment, reach out directly to 24/7 on-campus coordinators:
-            </p>
-
-            <div className="space-y-3 pt-2">
-              <div className="p-3.5 rounded-2xl bg-white/90 border border-rose-500/30 flex items-center justify-between">
-                <div className="flex items-center gap-3">
-                  <Phone className="w-4 h-4 text-rose-400" />
-                  <div>
-                    <p className="text-xs font-bold text-slate-900">Campus Security Control</p>
-                    <p className="text-[10px] text-slate-500">Main Gate Gatekeeper Post</p>
-                  </div>
-                </div>
-                <a
-                  href="tel:+911126599911"
-                  className="font-mono text-xs font-bold text-rose-400 hover:underline"
-                >
-                  +91 (011) 2659-9911
-                </a>
-              </div>
-
-              <div className="p-3.5 rounded-2xl bg-white/90 border border-rose-500/30 flex items-center justify-between">
-                <div className="flex items-center gap-3">
-                  <Phone className="w-4 h-4 text-rose-400" />
-                  <div>
-                    <p className="text-xs font-bold text-slate-900">Dean Student Affairs Helpline</p>
-                    <p className="text-[10px] text-slate-500">Direct Office Cabin</p>
-                  </div>
-                </div>
-                <a
-                  href="tel:+911126591001"
-                  className="font-mono text-xs font-bold text-rose-400 hover:underline"
-                >
-                  +91 (011) 2659-1001
-                </a>
-              </div>
-
-              <div className="p-3.5 rounded-2xl bg-white/90 border border-rose-500/30 flex items-center justify-between">
-                <div className="flex items-center gap-3">
-                  <MapPin className="w-4 h-4 text-rose-400" />
-                  <div>
-                    <p className="text-xs font-bold text-slate-900">Campus Health Clinic</p>
-                    <p className="text-[10px] text-slate-500">Near Student Hostel Block 3</p>
-                  </div>
-                </div>
-                <span className="font-mono text-xs text-slate-600">Ext: #405</span>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
